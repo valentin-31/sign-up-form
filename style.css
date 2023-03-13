@@ -7,6 +7,12 @@
     background: url(/assets/editedBg.jpg);
     width: 800px;
     height: 940px;
+
+    border: solid black 2px;
+}
+
+.formContainer{
+    border: solid green 2px;
 }
 
 ul {
@@ -24,4 +30,15 @@ ul {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  }
+
+  /* form{
+  } */
+
+  #stPara{
+    margin-top: 100px;
+  }
+
+  #sdPara{
+    margin-bottom: 80px;
   }
