@@ -3,16 +3,41 @@
     flex: 1;
 }
 
-.imageContainer{
+.leftSide{
     background: url(/assets/editedBg.jpg);
-    width: 800px;
-    height: 940px;
 
-    border: solid black 2px;
+    width: 50%;
+    height: 940px;
+    
+    display: flex;
 }
 
-.formContainer{
+/* .imageContainer{
+    background: url(/assets/editedBg.jpg);
+    width: 800px;
+    height: 940px; 
+
+    border: solid black 2px;
+} */
+
+ .textContainer{
+    color: white;
+} 
+
+.rightSide{
     border: solid green 2px;
+}
+
+.topText{
+    border: solid yellow 2px;
+}
+
+ .formContainer{
+    border: solid red;    
+} 
+
+.submitBtn{
+    border: solid blue 2px;
 }
 
 ul {
@@ -30,15 +55,4 @@ ul {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
-
-  /* form{
-  } */
-
-  #stPara{
-    margin-top: 100px;
-  }
-
-  #sdPara{
-    margin-bottom: 80px;
   }
