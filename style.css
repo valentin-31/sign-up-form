@@ -26,18 +26,32 @@
 
 .rightSide{
     border: solid green 2px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .topText{
     border: solid yellow 2px;
+    margin-top: 110px;
+    margin-bottom: 70px;
 }
 
  .formContainer{
-    border: solid red;    
+    border: solid red 2px;
+    
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
 } 
 
 .submitBtn{
     border: solid blue 2px;
+
+    margin-top: 30px;
 }
 
 ul {
@@ -55,4 +69,8 @@ ul {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  }
+
+  label{
+    display: block;
   }
