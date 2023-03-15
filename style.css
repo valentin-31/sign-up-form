@@ -1,27 +1,43 @@
+html,
+body{
+    margin: 0;
+}
+
 .mainContainer{
     display: flex;
     flex: 1;
+
+    height: 100vh;
+    width: 100vw;
 }
 
 .leftSide{
-    background: url(/assets/editedBg.jpg);
-
-    width: 50%;
-    height: 940px;
-    
     display: flex;
+    justify-content: center;
+
+    background: url(/assets/editedBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 25%;
+    height: 100%;
 }
 
-/* .imageContainer{
+
+ /* .imageContainer{
+    
     background: url(/assets/editedBg.jpg);
-    width: 800px;
-    height: 940px; 
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    background-attachment: fixed;
 
     border: solid black 2px;
-} */
+}   */
 
  .textContainer{
-    color: white;
+    color: red;
 } 
 
 .rightSide{
@@ -29,6 +45,8 @@
 
     display: flex;
     flex-direction: column;
+
+    width: 75%;
 }
 
 .topText{
