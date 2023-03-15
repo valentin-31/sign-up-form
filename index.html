@@ -22,38 +22,42 @@
             <div class="formContainer">
                 <form action="" method="get">
                     <h3>blblalbalablablbal</h3>
-                        <ul>
-                            <li>
+                    <div class="inputs">
+                        <div class="leftInputs">
+                            <div>
                                 <label for="firstName">FIRST NAME</label>
                                 <input type="text" id="firstName" name="user_firstName">
-                            </li>
-                            <li>
-                                <label for="lastName">LAST NAME</label>
-                                <input type="text" id="lastName" name="user_lastName">
-                            </li>
-                            <li>
+                            </div>
+                            <div>
                                 <label for="email">EMAIL</label>
                                 <input type="email" name="user_email" id="email">
-                            </li>
-                            <li>
-                                <label for="phoneNumber">PHONE NUMBER</label>
-                                <input type="tel" id="phoneNumber" name="user_phoneNumber">
-                            </li>
-                            <li>
+                            </div>
+                            <div>
                                 <label for="password">PASSWORD</label>
                                 <input type="password" id="password" name="user_password">
-                            </li>
-                            <li>
+                            </div>
+                        </div>
+                        <div class="rightInputs">
+                            <div>
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" id="lastName" name="user_lastName">
+                            </div>
+                            <div>
+                                <label for="phoneNumber">PHONE NUMBER</label>
+                                <input type="tel" id="phoneNumber" name="user_phoneNumber">
+                            </div>
+                            <div>
                                 <label for="passwordVerfication">CONFIRM PASSWORD</label>
                                 <input type="password" id="passwordVerfication" name="user_passwordVerfication" >
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
-            <div class="submitBtn">
+            <div class="submitContainer">
                 <ul>
                     <li>
-                        <button type="submit">Create Account</button>
+                        <button type="submit" id="submitBtn">Create Account</button>
                     </li>
                     <li>
                         <p>Already have an account? <a href="">Log ing</a></p>

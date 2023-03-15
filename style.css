@@ -33,8 +33,8 @@
 
 .topText{
     border: solid yellow 2px;
-    margin-top: 110px;
-    margin-bottom: 70px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
  .formContainer{
@@ -42,16 +42,25 @@
     
     justify-self: center;
 
-    display: flex;
-    flex-direction: column-reverse;
-
     box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
 } 
 
-.submitBtn{
+.inputs{
+    border: solid darkcyan 2px;
+    
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.submitContainer{
     border: solid blue 2px;
 
     margin-top: 30px;
+}
+
+#submitBtn{
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
 }
 
 ul {
