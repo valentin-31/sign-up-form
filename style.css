@@ -29,7 +29,6 @@ body{
 } 
 
 .rightSide{
-    border: solid green 2px;
     background-color: #F9FAFB;
 
     display: flex;
@@ -56,7 +55,7 @@ body{
 
     justify-self: center;
 
-    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 0 20px rgb(0 0 0 / 0.2);
 
     padding-left: 31px;
     padding-bottom: 22px;
@@ -76,16 +75,14 @@ h3{
     justify-content: flex-start;
 }
 
-.leftInputs{
-    display: flex;
-    flex-direction: column;
-
-    margin-right: 60px;
-}
-
+.leftInputs,
 .rightInputs{
     display: flex;
     flex-direction: column;
+}
+
+.leftInputs{
+    margin-right: 60px;
 }
 
 .labelAndInputs{
@@ -99,7 +96,7 @@ h3{
 }
 
 #submitBtn{
-    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.2);
     background-color: #BA5A5B;
 
     border-radius: 20px;
@@ -122,6 +119,23 @@ ul {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  }
+
+  input{
+    border-color: #E5E7EB;
+    border-radius: 10px;
+  }
+
+  input:focus{
+    outline-color: #0000FF;
+  }
+
+  input[type="password"]:invalid{
+    border: 2px solid #f02529;
+  }
+
+  input:valid{
+    border: 2px solid #30e648;
   }
 
   label{

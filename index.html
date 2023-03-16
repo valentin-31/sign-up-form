@@ -26,29 +26,33 @@
                         <div class="leftInputs">
                             <div class="labelAndInputs">
                                 <label for="firstName">FIRST NAME</label>
-                                <input type="text" id="firstName" name="user_firstName">
+                                <input type="text" id="firstName" name="user_firstName" 
+                                required pattern="^[^0-9]+$">
                             </div>
                             <div class="labelAndInputs">
                                 <label for="email">EMAIL</label>
-                                <input type="email" name="user_email" id="email">
+                                <input type="email" name="user_email" id="email" required>
                             </div>
                             <div class="passwordField">
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="user_password">
+                                <input type="password" id="password" name="user_password"
+                                required minlength="3" maxlength="16">
                             </div>
                         </div>
                         <div class="rightInputs">
                             <div class="labelAndInputs">
                                 <label for="lastName">LAST NAME</label>
-                                <input type="text" id="lastName" name="user_lastName">
+                                <input type="text" id="lastName" name="user_lastName" 
+                                required pattern="^[^0-9]+$">
                             </div>
                             <div class="labelAndInputs">
                                 <label for="phoneNumber">PHONE NUMBER</label>
-                                <input type="tel" id="phoneNumber" name="user_phoneNumber">
+                                <input type="tel" id="phoneNumber" name="user_phoneNumber" required>
                             </div>
                             <div class="passwordField">
                                 <label for="passwordVerfication">CONFIRM PASSWORD</label>
-                                <input type="password" id="passwordVerfication" name="user_passwordVerfication" >
+                                <input type="password" id="passwordVerfication" name="user_passwordVerfication"
+                                required minlength="3" maxlength="16">
                             </div>
                         </div>
                     </div>
