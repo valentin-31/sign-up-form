@@ -18,23 +18,11 @@ body{
     background: url(/assets/editedBg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 
-    width: 25%;
+    width: 40%;
     height: 100%;
 }
-
-
- /* .imageContainer{
-    
-    background: url(/assets/editedBg.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    background-attachment: fixed;
-
-    border: solid black 2px;
-}   */
 
  .textContainer{
     color: red;
@@ -42,43 +30,81 @@ body{
 
 .rightSide{
     border: solid green 2px;
+    background-color: #F9FAFB;
 
     display: flex;
     flex-direction: column;
 
-    width: 75%;
+    width: 70%;    
 }
 
 .topText{
-    border: solid yellow 2px;
-    margin-top: 40px;
     margin-bottom: 30px;
+
+    font-size: x-large;
+    font-weight: bold;
+
+    padding-left: 31px;
+}
+
+#longPara{
+    margin-bottom: 18px;
 }
 
  .formContainer{
-    border: solid red 2px;
-    
+    background-color: #FFFFFF;
+
     justify-self: center;
 
     box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+
+    padding-left: 31px;
+    padding-bottom: 22px;
 } 
 
+h3{
+    font-size: x-large;
+}
+
 .inputs{
-    border: solid darkcyan 2px;
-    
+
+    padding-left: 18px;
+    padding-bottom: 18px;
+
     display: flex;
 
-    justify-content: space-around;
+    justify-content: flex-start;
+}
+
+.leftInputs{
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 60px;
+}
+
+.rightInputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.labelAndInputs{
+    margin-bottom: 16px;
 }
 
 .submitContainer{
-    border: solid blue 2px;
-
     margin-top: 30px;
+
+    padding-left: 31px;
 }
 
 #submitBtn{
     box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+    background-color: #BA5A5B;
+
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
 }
 
 ul {
@@ -92,7 +118,7 @@ ul {
     font-family: inherit;
     font-size: 100%;
 
-    width: 150px;
+    width: 200px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
