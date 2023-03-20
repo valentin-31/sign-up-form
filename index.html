@@ -20,7 +20,7 @@
                 <p>You know what to do.</p>
             </div>
             <div class="formContainer">
-                <form action="" method="get">
+                <form onSubmit = "return checkPassword(this)" method="get">
                     <h3>Let's do this!</h3>
                     <div class="inputs">
                         <div class="leftInputs">
@@ -36,7 +36,8 @@
                             <div class="passwordField">
                                 <label for="password">PASSWORD</label>
                                 <input type="password" id="password" name="user_password"
-                                required minlength="3" maxlength="16">
+                                required minlength="3" maxlength="16" 
+                                placeholder="  between 6-16 characters">
                             </div>
                         </div>
                         <div class="rightInputs">
@@ -51,8 +52,8 @@
                             </div>
                             <div class="passwordField">
                                 <label for="passwordVerfication">CONFIRM PASSWORD</label>
-                                <input type="password" id="passwordVerfication" name="user_passwordVerfication"
-                                required minlength="3" maxlength="16">
+                                <input type="password" id="passwordVerfication" name="user_passwordVerification"
+                                required minlength="3" maxlength="16" placeholder="  repeat the password">
                             </div>
                         </div>
                     </div>
@@ -61,7 +62,7 @@
             <div class="submitContainer">
                 <ul>
                     <li>
-                        <button type="submit" id="submitBtn">Create Account</button>
+                        <button type="submit" id="submitBtn" onclick="checkPassword()">Create Account</button>
                     </li>
                     <li>
                         <p>Already have an account? <a href="">Log ing</a></p>
@@ -70,5 +71,15 @@
             </div>
         </div>
     </main>
+    <script>
+        function checkPassword(form){
+        let password = document.getElementById("password").value
+        let passwordVerification = document.getElementById("passwordVerfication").value
+
+        if(password !== passwordVerification){
+            window.alert("\nPassword did not match: Please try again...");
+        }
+    }
+    </script>
 </body>
 </html>
