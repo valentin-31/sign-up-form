@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 html,
 body{
     margin: 0;
@@ -14,19 +16,45 @@ body{
 .leftSide{
     display: flex;
     justify-content: center;
+    align-items: center;
+    
+    /* Set the background img for the left side, make it "responsive" */
 
     background: url(/assets/editedBg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
+    /* the amount of space that should occupy */
+
     width: 40%;
     height: 100%;
 }
 
+    /* Style the text area in the left side */
+
  .textContainer{
-    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    background-color: rgba(0, 0, 0, 0.4);
+
+    width: 500px;
 } 
+
+img{
+    height: 125px;
+}
+
+.text{
+    font-family: 'Righteous', cursive;
+    src: url("fonts/journal-webfont.woff2") format("woff2"), url("fonts/journal-webfont.woff");
+    color: white;
+    font-size: 40px;
+}
+
+    /* styles for the right side */
 
 .rightSide{
     background-color: #F9FAFB;
@@ -36,6 +64,8 @@ body{
 
     width: 70%;    
 }
+
+    /* the top text in right area */
 
 .topText{
     margin-bottom: 30px;
@@ -49,6 +79,8 @@ body{
 #longPara{
     margin-bottom: 18px;
 }
+
+    /* the form itself */
 
  .formContainer{
     background-color: #FFFFFF;
@@ -65,6 +97,8 @@ h3{
     font-size: x-large;
 }
 
+    /* styles for the inputs */
+
 .inputs{
 
     padding-left: 18px;
@@ -75,19 +109,25 @@ h3{
     justify-content: flex-start;
 }
 
+    /* make the inputs appear one below the other */
+
 .leftInputs,
 .rightInputs{
     display: flex;
     flex-direction: column;
 }
 
+    /* space the two groups of inputs */
+
 .leftInputs{
-    margin-right: 60px;
+    margin-right: 100px;
 }
 
 .labelAndInputs{
     margin-bottom: 16px;
 }
+
+    /* Styles for the submit button */
 
 .submitContainer{
     margin-top: 30px;
@@ -104,18 +144,22 @@ h3{
     height: 40px;
 }
 
+    /* removes the list markers */
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
+    
+    /* Standardize all the inputs boxes */
 
   button,
   input{
     font-family: inherit;
     font-size: 100%;
 
-    width: 200px;
+    width: 250px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -125,6 +169,8 @@ ul {
     border-color: #E5E7EB;
     border-radius: 10px;
   }
+
+    /* Colors for when the input is focused, right or wrong */
 
   input:focus{
     outline-color: #0000FF;
@@ -138,6 +184,8 @@ ul {
     border: 2px solid #17a72a;
   }
 
+  /* make the input field appear below the label */
+  
   label{
     display: block;
   }

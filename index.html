@@ -9,20 +9,31 @@
 </head>
 <body>
     <main class="mainContainer">
+        <!-- left side of the page -->
         <div class="leftSide">
             <div class="imageContainer">
-                <div class="textContainer">En Family</div>
+                <div class="textContainer">
+                    <div class="img">
+                        <img src="/assets/editMush.png" alt="mushroom logo">
+                    </div>
+                    <div class="text">En Family</div>
+                </div>
             </div>
         </div>
+        <!-- right side of the page -->
         <div class="rightSide">
+            <!-- the top text tha appears in the right of the page -->
             <div class="topText">
-                <p id="longPara">This is not a real online service!!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, laboriosam ab. Odio veniam neque commodi cum esse deleniti! Tempore officia beatae laudantium sit, eligendi debitis dolor itaque eos cumque reiciendis.</p>
-                <p>You know what to do.</p>
+                <p id="longPara">The En Family is a powerful group led by En that controls a large portion of the Magic User world. They reside in En's Mansion. The organization slowly took over most of the businesses in the Magic User Realm, becoming both a business organization and sort of a new world order</p>
+                <p>Their base of operations is the En's Mansion</p>
             </div>
+            <!-- the form itself -->
             <div class="formContainer">
                 <form onSubmit = "return checkPassword(this)" method="get">
-                    <h3>Let's do this!</h3>
+                    <h3>Join Us!!!</h3>
+                    <!-- inputs -->
                     <div class="inputs">
+                        <!-- left group of inputs -->
                         <div class="leftInputs">
                             <div class="labelAndInputs">
                                 <label for="firstName">FIRST NAME</label>
@@ -40,6 +51,7 @@
                                 placeholder="  between 6-16 characters">
                             </div>
                         </div>
+                        <!-- right group of inputs  -->
                         <div class="rightInputs">
                             <div class="labelAndInputs">
                                 <label for="lastName">LAST NAME</label>
@@ -52,32 +64,41 @@
                             </div>
                             <div class="passwordField">
                                 <label for="passwordVerfication">CONFIRM PASSWORD</label>
-                                <input type="password" id="passwordVerfication" name="user_passwordVerification"
+                                <input type="password" id="passwordVerification" name="user_passwordVerification"
                                 required minlength="3" maxlength="16" placeholder="  repeat the password">
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
+            <!-- the submit button zone -->
             <div class="submitContainer">
                 <ul>
                     <li>
                         <button type="submit" id="submitBtn" onclick="checkPassword()">Create Account</button>
                     </li>
                     <li>
-                        <p>Already have an account? <a href="">Log ing</a></p>
+                        <p>Already a family member? <a href="">Identify</a></p>
                     </li>
                 </ul>
             </div>
         </div>
     </main>
     <script>
+        // this function checks that the two passwords match
+
         function checkPassword(form){
+            // get the passwords
         let password = document.getElementById("password").value
-        let passwordVerification = document.getElementById("passwordVerfication").value
+        let passwordVerification = document.getElementById("passwordVerification").value
 
         if(password !== passwordVerification){
+            // if they are not equal, pop error message and make the check password input red 
             window.alert("\nPassword did not match: Please try again...");
+            document.getElementById("passwordVerification").style.borderColor ="#f02529 "  
+        } else{
+            // if it is correct the border turns green
+            document.getElementById("passwordVerification").style.borderColor ="#17a72a";   
         }
     }
     </script>
